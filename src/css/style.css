@@ -1,0 +1,151 @@
+body {
+	background-image: url(https://images3.alphacoders.com/119/1191529.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 60px;
+	color: #222;
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 45px;
+	color: #222;
+	text-align: center;
+	border-radius: 50px;
+	position: relative;
+}
+
+.card::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 45%;
+    border-radius: 100%;
+    background-color: #fff;
+    opacity: .7;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+
+
+.fire {
+	background-color: #ff3e3e93;
+}
+
+.grass {
+	background-color: #01ff1279;
+}
+
+.electric {
+	background-color: #ffeb3480;
+}
+
+.water, .ice {
+	background-color: #84d8ff79;
+}
+
+.ground {
+	background-color: #ff9022a2;
+}
+
+.rock {
+	background-color: #81818171;
+}
+
+.fairy {
+	background-color: #ef92ff8a;
+}
+
+.poison {
+	background-color: #5a004b8c;
+}
+
+.bug {
+	background-color: #b8f80786;
+}
+
+.dragon {
+	background-color: #00256980;
+}
+
+.psychic {
+	background-color: #d400ff6b;
+}
+
+.fighting {
+	background-color: #4e00007a;
+}
+
+.normal {
+	background-color: #fffbfb7a;
+}
+
+.ghost {
+	background-color: #48008379;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+	color: black;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: rgb(0, 0, 0);
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+    text-transform: capitalize;
+}
+
+.card-image {
+	height: 200px;
+	position: relative;
+	z-index: 2;
+	
+}
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}
